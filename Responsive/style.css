@@ -1,0 +1,517 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+nav{
+    position: fixed;
+    z-index: 20;
+    height: 65px;
+    width: 100vw;
+    max-width: 1300px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.7s;
+    clip-path: polygon(52% 0px, 45% 0px, 45% 20%, 52% 20%);
+
+}
+nav:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.logo{
+    width: 5vw;
+    margin-left: 10px;
+}
+.logo img{
+    width: 100%;
+}
+.webname{
+    color: rgb(54, 47, 99);
+    font-size: x-large;
+}
+.webname h1{
+    font-size: 100%;
+}
+.btn{
+    margin-right: 25px;
+}
+.btn a{
+    border: 2px solid rgb(54, 47, 99);
+    border-radius: 20px;
+    font-size: 100%;
+    padding: 5px 19px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(109, 47, 47);
+}
+.btn a:hover{
+    background-color:rgb(54, 47, 99);
+    color: #fff;
+}
+.box{
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    max-width: 1300px;
+    height: 100vh;
+    background: url(./project.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+}
+.info{
+    padding: 20px 55px 20px 55px;
+    position: absolute;
+    overflow: auto;
+    top: 100vh;
+    max-width: 1300px;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(54, 47, 99);
+}
+.director{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 15px rgba(39, 91, 126, 0.532);
+    align-items: center;
+    border: 3px solid rgb(54, 47, 99);
+    width: 22%;
+    border-radius: 18px;
+    padding: 10px;
+    height: auto;
+    line-height: 27px;
+    transition: all 0.7s;
+}
+.dir{
+    font-weight: 100;
+    font-size:19px;
+}
+.director p{
+    text-align: center;
+}
+.ema img{
+    border-radius: 30px;
+    width: 170px;
+}
+.certificate{
+    color: rgb(54, 47, 99);
+    width: 35%;
+    text-align: center;
+    overflow: auto;
+    padding: 30px;
+    line-height: 35px;
+}
+.certificate h2{
+    text-align: center;
+    transition: 0.7s;
+}
+.director:hover{
+    background-color: rgb(54, 47, 99);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+.counter{
+    position: absolute;
+    top: 200vh;
+}
+.clienthead{
+    position: absolute;
+    top: 200vh;
+    display: flex;
+    width: 98vw;
+    justify-content: center;
+    align-items: center;
+}
+.clienthead h2{
+    text-align: center;
+}
+
+.client{
+    position:absolute;
+    top: 200vh;
+    width: 98vw;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+}
+.clientlogo{
+    width: 15%;
+}
+.clientlogo img{
+    width: 200px;
+}
+/* This is copied till line 135 */
+
+
+.underline {
+    text-decoration: none; 
+    position: relative; 
+  }  
+ .underline:after {
+     position: absolute;
+     content: '';
+     height: 2px;
+     bottom: 0px; 
+     margin: 0 auto;
+       left: 0;
+     right: 0;
+       width: 0%;
+       background: rgb(54, 47, 99);
+       -o-transition:.5s;
+         -ms-transition:.5s;
+     -moz-transition:.5s;
+     -webkit-transition:.5s;
+     transition:.5s;
+ }
+     .underline:hover:after {
+       width:80%;
+       background: rgb(54, 47, 99);
+ }
+ @media(max-width:240px){
+    nav{
+        position: fixed;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .logo{
+        width: 25vw;
+        margin-left: 0px;
+    }
+
+    .webname{
+        font-size: xx-small;
+    }
+    .btn{
+        margin-right: 7px;
+        margin-top: -4px;
+    }
+    .btn a{
+        border: 1px solid rgb(54, 47, 99);
+        font-size: xx-small;
+        padding: 2px 7px;
+    }
+
+    .info{
+        display: block;
+        width: 100vw;
+        overflow-x: hidden;
+        margin: 0px;
+        padding: 0px;
+        color: rgb(0, 0, 0);
+        }
+        .director:hover{
+        transform: scale(1);
+        background-color: rgb(54, 47, 99);
+        color: #fff;
+        }
+.director{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    border: none;
+    height: auto;
+    line-height: 27px;
+    transition: all 0.7s;
+}
+.director h2{
+    text-align: center;
+}
+.dir{
+    font-weight: 100;
+    font-size:19px;
+}
+.director p{
+    text-align: center;
+}
+.ema img{
+    border-radius: 30px;
+    width:100%;
+}
+.certificate{
+    color: rgb(54, 47, 99);
+    width: 100vw;
+    text-align: center;
+    overflow: auto;
+    padding: 0px;
+}
+.certificate h2{
+    text-align: center;
+    transition: 0.7s;
+}
+ }
+ @media(min-width:240px) and (max-width:600px)
+        {
+            .client{
+                flex-direction: column;
+                top: 203vh;
+            }
+            nav{
+                position: fixed;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+            .logo{
+                width: 25vw;
+                margin-left: 0px;
+            }
+        
+            .webname{
+                font-size: small;
+            }
+            .btn{
+                margin-right: 7px;
+                margin-top: -4px;
+            }
+            .btn a{
+                border: 1px solid rgb(54, 47, 99);
+                font-size: xx-small;
+                padding: 2px 7px;
+            }
+        
+            .info{
+                display: block;
+                width: 100vw;
+                overflow-x: hidden;
+                margin: 0px;
+                padding: 0px;
+                color: rgb(0, 0, 0);
+                }
+                .director:hover{
+                transform: scale(1);
+                background-color: rgb(54, 47, 99);
+                color: #fff;
+                }
+        .director{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            border: 3px solid rgb(30, 66, 22);
+            border: none;
+            height: auto;
+            line-height: 27px;
+            transition: all 0.7s;
+        }
+        .director h2{
+            text-align: center;
+        }
+        .dir{
+            font-weight: 100;
+            font-size:19px;
+        }
+        .director p{
+            text-align: center;
+        }
+        .ema img{
+            border-radius: 30px;
+            width:100%;
+        }
+        .certificate{
+            color: rgb(54, 47, 99);
+            width: 100vw;
+            text-align: center;
+            overflow: auto;
+            padding: 0px;
+        }
+        .certificate h2{
+            text-align: center;
+            transition: 0.7s;
+        }
+         }
+         @media(min-width:600px) and (max-width:770px)
+        {
+        
+            .webname{
+                font-size: large;
+            }
+            .btn{
+                margin-right: 17px;
+                margin-top: -4px;
+            }
+            .btn a{
+                font-size: xx-small;
+                padding: 2px 7px;
+            }
+        
+            .info{
+                display: flex;
+                width: 100vw;
+                overflow-x: hidden;
+                margin: 0px;
+                padding: 0px;
+                color: rgb(0, 0, 0);
+                }
+                .director:hover{
+                transform: scale(1);
+                background-color: rgb(54, 47, 99);
+                color: #fff;
+                }
+        .director{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            border: 3px solid rgb(30, 66, 22);
+            border: none;
+            height: auto;
+            line-height: 27px;
+            transition: all 0.7s;
+        }
+        .director h2{
+            text-align: center;
+        }
+        .dir{
+            font-weight: 100;
+            font-size:19px;
+        }
+        .director p{
+            text-align: center;
+        }
+        .ema img{
+            border-radius: 30px;
+            width:100%;
+        }
+        .certificate{
+            color: rgb(54, 47, 99);
+            width: 100vw;
+            text-align: center;
+            overflow: auto;
+            padding: 0px;
+        }
+        .certificate h2{
+            text-align: center;
+            color: rgb(54, 47, 99);
+            transition: 0.7s;
+        }
+        .underline:hover:after {
+            width:35%;
+            background: rgb(54, 47, 99);
+      }
+         
+        }
+        @media(min-width:770px) and (max-width:1200px){
+
+            nav{
+                position: fixed;
+                z-index: 20;
+                width: 100vw;
+                background-color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: all 0.7s;
+                clip-path: polygon(52% 0px, 45% 0px, 45% 20%, 52% 20%);
+            
+            }
+            nav:hover{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+            .logo{
+                width: 3vw;
+                margin-left: 10px;
+            }
+            .logo img{
+                width: 100%;
+            }
+            .webname{
+                color: rgb(54, 47, 99);
+                font-size: x-large;
+            }
+            .webname h1{
+                font-size: 100%;
+            }
+            .btn{
+                margin-right: 25px;
+            }
+            .btn a{
+                border: 2px solid rgb(54, 47, 99);
+                border-radius: 20px;
+                font-size: 100%;
+                padding: 5px 19px;
+                font-weight: bolder;
+                text-decoration: none;
+                color: rgb(109, 47, 47);
+            }
+            .btn a:hover{
+                background-color:rgb(54, 47, 99);
+                color: #fff;
+            }
+            .box{
+                position: absolute;
+                top: 0px;
+                z-index: -1;
+                width: 100%;
+                height: 100vh;
+                background: url(./project.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center top;
+            }
+            .info{
+                padding: 0px;
+                margin: 0;
+                position: absolute;
+                overflow: auto;
+                top: 100vh;
+                height: 90vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                color: rgb(0, 0, 0);
+            }
+            .director{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 3px solid rgb(54, 47, 99);
+                width: 30%;
+                overflow: auto;
+                border-radius: 18px;
+                padding: 10px;
+                height: auto;
+                line-height: 27px;
+                transition: all 0.7s;
+            }
+            .dir{
+                font-weight: 100;
+                font-size:19px;
+            }
+            .director p{
+                text-align: center;
+            }
+            .ema img{
+                border-radius: 30px;
+                width: 170px;
+            }
+            .certificate{
+                color: rgb(54, 47, 99);
+                width: 35%;
+                text-align: center;
+                overflow: auto;
+                padding: 30px;
+                line-height: 1.5rem;
+            }
+            .certificate h2{
+                text-align: center;
+                transition: 0.7s;
+            }
+            .director:hover{
+                background-color: rgb(54, 47, 99);
+                color: #fff;
+                transform: scale(1.1);
+            }   
+        }
